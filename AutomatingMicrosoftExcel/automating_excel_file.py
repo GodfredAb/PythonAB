@@ -4,6 +4,7 @@ def StudentScores(filename):
         wb = xl.load_workbook(filename)
         sheet = wb['Sheet1']
 
+
         for row in range(2, sheet.max_row + 1):
             cell = sheet.cell(row, 2)
             cell1 = sheet.cell(row, 3)
